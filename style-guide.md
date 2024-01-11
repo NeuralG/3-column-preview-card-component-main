@@ -17,8 +17,8 @@ Very dark cyan: hsl(179, 100%, 13%)
 
 ### Neutral
 
-Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
-Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+Transparent white (paragraphsX): hsla(0, 0%, 100%, 0.75)
+Very light gray (backgroundX, headingsX, buttonsX): hsl(0, 0%, 95%)
 
 ## Typography
 

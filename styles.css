@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--darker-cyan: hsl(179, 100%, 13%);
+
+	--transparent-white: hsla(0, 0%, 100%, 0.75);
+	--very-light-gray: hsl(0, 0%, 95%);
+
+	--bold-font: "Big Shoulders Display", sans-serif;
+	--regular-font: "Lexend Deca", sans-serif;
+
+	font-size: 15px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--regular-font);
+	background-color: var(--very-light-gray);
+}
+
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 4em;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 3em;
+	height: 450px;
+	min-width: 210px;
+	max-width: 280px;
+}
+
+.logo {
+	width: 3rem;
+}
+
+h2 {
+	margin-top: 1em;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	font-family: var(--bold-font);
+	color: var(--very-light-gray);
+}
+
+p {
+	margin-top: 1.25em;
+	color: var(--transparent-white);
+	font-family: var(--regular-font);
+	font-weight: 400;
+	line-height: 1.75;
+}
+
+.card > a {
+	display: inline-block;
+	align-self: baseline;
+	text-decoration: none;
+	margin-top: auto;
+	border-radius: 50px;
+	padding: 0.8em 1.8em;
+	background-color: var(--very-light-gray);
+	border: 3px solid var(--very-light-gray);
+}
+
+.card1 {
+	background-color: var(--bright-orange);
+	a {
+		color: var(--bright-orange);
+	}
+	a:hover {
+		background-color: var(--bright-orange);
+		color: var(--very-light-gray);
+	}
+}
+
+.card2 {
+	background-color: var(--dark-cyan);
+	a {
+		color: var(--dark-cyan);
+	}
+	a:hover {
+		background-color: var(--dark-cyan);
+		color: var(--very-light-gray);
+	}
+}
+
+.card3 {
+	background-color: var(--darker-cyan);
+	a {
+		color: var(--darker-cyan);
+	}
+	a:hover {
+		background-color: var(--darker-cyan);
+		color: var(--very-light-gray);
+	}
+}
+
+@media (width >= 950px) {
+	.main-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.card {
+		height: 500px;
+		width: 300px;
+		max-width: 300px;
+	}
+	.card1 {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.card3 {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	a {
+		margin-bottom: 1em;
+	}
+	.logo {
+		width: 4.3rem;
+	}
+}
+
+@media (width < 950px) {
+	.card1 {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.card3 {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+}
